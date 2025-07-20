@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8" />
+  <title>Province 1 Map with Various Locations & Dark Mode</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+</head>
+<body>
+  <h2>📍 Province 1 Map with Key Locations, Stores, Supermarkets & Dark Mode</h2>
+
+  <div id="map"></div>
+
+  <div class="controls">
+    <label for="toggleDark" style="user-select:none; font-weight:600; margin-bottom:6px; color:#333;">🌙 Dark Mode</label>
+    <label class="switch">
+      <input type="checkbox" id="toggleDark" />
+      <span class="slider"></span>
+    </label>
+
+    <button id="toggleColleges">🎓 Toggle Colleges</button>
+    <button id="toggleSupermarkets">🛒 Toggle Supermarkets</button>
+    <button id="toggleStores">🏪 Toggle Stores</button>
+    <button id="toggleOthers">🏥 Toggle Others</button>
+
+    <button id="toggleLocation">📍 Toggle Your Location</button>
+  </div>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
